@@ -6,6 +6,7 @@ gem 'rails', '~> 5.2.2'
 gem 'puma', '~> 3.11'
 gem 'uglifier', '>= 1.3.0'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'twitter-bootstrap-rails'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
