@@ -9,7 +9,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'twitter-bootstrap-rails'
 gem 'devise'
 gem 'devise-i18n'
-gem 'russian'
+gem 'rails-i18n'
 gem 'jquery-rails', '~> 4.1'
 
 group :development, :test do
