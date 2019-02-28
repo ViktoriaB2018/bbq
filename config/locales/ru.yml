@@ -29,3 +29,7 @@ ru:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
+  notises:
+    events:
+      destroy: 'Вы точно хотите удалить событие?'
+
