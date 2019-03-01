@@ -58,3 +58,7 @@
 .thumbnail-inner {
     padding: 20px 4px 4px;
 }
+
+.no-padding {
+    padding: 0 !important
+}
