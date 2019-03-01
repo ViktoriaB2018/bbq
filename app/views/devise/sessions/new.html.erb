@@ -2,7 +2,6 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-  <form role="form">
     <div class="col-sm-5 no-padding">
       <div class="form-group">
         <%= f.label :email %>
@@ -27,6 +26,4 @@
 
       <%= render "devise/shared/links" %>
     </div>
-  </form>
-
 <% end %>

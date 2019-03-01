@@ -4,7 +4,6 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.hidden_field :reset_password_token %>
 
-  <form role="form">
     <div class="col-sm-5 no-padding">
       <div class="form-group">
       <%= f.label :password, "New password" %>
@@ -25,7 +24,4 @@
 
       <%= render "devise/shared/links" %>
     </div>
-  </form>
 <% end %>
-
-
