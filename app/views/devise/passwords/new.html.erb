@@ -2,19 +2,16 @@
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
-    <div class="col-sm-5 no-padding">
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
-      </div>
-
-      <div class="form-group">
-        <%= f.submit "Отправьте мне инструкции по сбросу пароля", class: "btn btn-primary" %>
-      </div>
-
-      <%= render "devise/shared/links" %>
+  <div class="col-sm-5 no-padding">
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
     </div>
+
+    <div class="form-group">
+      <%= f.submit "Отправьте мне инструкции по сбросу пароля", class: "btn btn-primary" %>
+    </div>
+
+    <%= render "devise/shared/links" %>
+  </div>
 <% end %>
-
-

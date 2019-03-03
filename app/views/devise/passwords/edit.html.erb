@@ -4,8 +4,8 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.hidden_field :reset_password_token %>
 
-    <div class="col-sm-5 no-padding">
-      <div class="form-group">
+  <div class="col-sm-5 no-padding">
+    <div class="form-group">
       <%= f.label :password, "New password" %>
       <% if @minimum_password_length %>
         <em>(не менее <%= @minimum_password_length %> символов)</em>
@@ -22,6 +22,6 @@
       <%= f.submit "Изменить пароль", class: "btn btn-primary" %>
     </div>
 
-      <%= render "devise/shared/links" %>
-    </div>
+    <%= render "devise/shared/links" %>
+  </div>
 <% end %>
