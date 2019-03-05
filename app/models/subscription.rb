@@ -28,6 +28,6 @@ class Subscription < ApplicationRecord
   end
 
   def user_has_email?
-    User.where(email: user_email).present?
+    return true if User.where(email: user_email).present?
   end
 end
