@@ -3,11 +3,12 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
-
+      photo: 'Фотография'
     attributes:
       user:
         email: 'Email'
         name: 'Имя'
+        avatar: 'Аватарка'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
       event:
@@ -15,6 +16,8 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      photo:
+        photo: 'Фотография'
   controllers:
     events:
       created: 'Вы создали новое событие'
@@ -30,6 +33,10 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+    photos:
+      error: 'Что-то не так с фото'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотографию'
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'

@@ -11,6 +11,8 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
 gem 'jquery-rails', '~> 4.1'
+gem 'carrierwave'
+gem 'rmagick'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
