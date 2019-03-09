@@ -13,6 +13,8 @@ gem 'rails-i18n'
 gem 'jquery-rails', '~> 4.1'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'fog-aws'
+gem 'figaro'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'

@@ -9,7 +9,7 @@ class Subscription < ApplicationRecord
   validates :user, uniqueness: {scope: :event_id}, if: -> {user.present?}
   validates :user_email, uniqueness: {scope: :event_id},
             unless: -> {user.present?}
-  validates :user_email, uniqueness: true, if: :user_has_email?
+  #validates :user_email, uniqueness: true, if: :email_exists
 
   def user_name
     if user.present?
@@ -27,7 +27,8 @@ class Subscription < ApplicationRecord
     end
   end
 
-  def user_has_email?
-    return true if User.where(email: user_email).present?
+  def email_exists
+    emails = User.connection.select_values("SELECT email FROM users")
+    emails.include?(self.user_email)
   end
 end
