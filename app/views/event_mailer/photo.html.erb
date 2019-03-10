@@ -1,0 +1,20 @@
+<h1><%= t '.title' %></h1>
+
+<% if Rails.env.production? %>
+    <p><%= image_tag(@photo.photo.url) %></p>
+  <% else %>
+    <p><%= image_tag attachments['image.jpg'].url %></p>
+<% end %>
+
+<p><%= t '.author' %>: <strong><%= @photo.user.name %></strong></p>
+
+<hr/>
+
+<%= t '.event' %>
+<h3><%= @event.title %></h3>
+
+<%= t '.datetime' %>
+<h4><%= l @photo.created_at %></h4>
+
+<%= t '.owner' %>
+<h4><%= @photo.user.name %></h4>

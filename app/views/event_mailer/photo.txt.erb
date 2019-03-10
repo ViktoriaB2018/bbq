@@ -1,0 +1,15 @@
+<%= t '.title' %>
+----
+
+<% if Rails.env.production? %>
+    <%= image_tag(@photo.photo.url) %>
+  <% else %>
+    <%= image_tag attachments['image.jpg'].url %>
+<% end %>
+
+<%= t '.author' %>: <%= @photo.user.name %>
+
+--------------------------------
+<%= t '.event' %>: <%= @event.title %>
+<%= t '.datetime' %>: <%= l @photo.datetime %>
+<%= t '.owner' %>: <%= @photo.user.name %>

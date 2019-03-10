@@ -61,6 +61,9 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+  photos:
+    photo:
+      destroy_confirm: 'Вы уверены, что хотите удалить фото?'
   event_mailer:
     comment:
       title: 'Новый комментарий'
@@ -76,3 +79,9 @@ ru:
       event: 'Событие'
       datetime: 'Состоится'
       owner: 'Организатор'
+    photo:
+      title: 'Новое фото'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Добавлено'
+      owner: 'Добавил'

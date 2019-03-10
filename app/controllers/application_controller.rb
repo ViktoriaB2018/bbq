@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user_can_edit?
+  helper_method :user_can_add_photos?
 
   protect_from_forgery with: :exception
 
@@ -17,5 +18,9 @@ class ApplicationController < ActionController::Base
     model.user == current_user ||
         (model.try(:event).present? && model.event.user == current_user)
     )
+  end
+
+  def user_can_add_photos?(event)
+    user_signed_in? && event.visitors.include?(current_user)
   end
 end
