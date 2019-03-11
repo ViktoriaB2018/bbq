@@ -85,3 +85,6 @@ ru:
       event: 'Событие'
       datetime: 'Добавлено'
       owner: 'Добавил'
+  errors:
+    messages:
+      extension_whitelist_error: 'должна иметь формат jpg jpeg gif png'
