@@ -18,6 +18,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+        pincode: 'Пин-код доступа'
       comment:
         user_name: 'Ваше имя'
         body: 'Комментарий'
@@ -32,6 +33,7 @@ ru:
       created: 'Вы создали новое событие'
       updated: 'Вы обновили обытие'
       destroyed: 'Вы удалили обытие :('
+      wrong_pincode: 'Неверный пин-код!'
     users:
       updated: 'Вы обновили свой профиль'
     comments:
@@ -89,3 +91,4 @@ ru:
   errors:
     messages:
       extension_whitelist_error: 'должна иметь формат jpg jpeg gif png'
+      subscription_error: 'не может подписаться на собственное событие'
