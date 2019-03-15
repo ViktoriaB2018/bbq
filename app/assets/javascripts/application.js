@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require map
 //= require twitter/bootstrap
 //= require activestorage
 //= require_tree .

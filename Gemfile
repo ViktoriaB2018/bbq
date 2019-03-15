@@ -5,6 +5,8 @@ ruby '2.5.3'
 gem 'rails', '~> 5.2.2'
 gem 'puma', '~> 3.11'
 gem 'uglifier', '>= 1.3.0'
+gem 'sassc'
+gem 'coffee-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'twitter-bootstrap-rails'
 gem 'devise'
