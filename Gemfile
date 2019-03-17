@@ -5,7 +5,7 @@ ruby '2.5.3'
 gem 'rails', '~> 5.2.2'
 gem 'puma', '~> 3.11'
 gem 'uglifier', '>= 1.3.0'
-gem 'sassc'
+gem 'sass-rails'
 gem 'coffee-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'twitter-bootstrap-rails'
@@ -17,6 +17,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
 gem 'figaro'
+gem 'lightbox-bootstrap-rails', '~> 5.1', '>= 5.1.0.1'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
