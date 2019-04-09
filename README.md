@@ -41,3 +41,8 @@ You need set up variable environments to config/application.yml with gem [figaro
 GMAIL_USERNAME
 GMAIL_PASSWORD
 ```
+#### For development environment
+
+VPS Digital Ocean
+
+http://b-b-q.icu

@@ -28,6 +28,11 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'letter_opener'
+  gem 'capistrano', '~> 3.11', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-passenger', require: false
+  gem 'capistrano-rbenv', require: false
+  gem 'capistrano-bundler', require: false
 end
 
 group :production do
