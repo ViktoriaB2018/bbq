@@ -1,5 +1,5 @@
 class EventMailer < ApplicationMailer
-  default from: 'no-reply@let-bbq.herokuapp.com'
+  default from: 'bbq@b-b-q.icu'
 
   def subscription(event, subscription)
     @email = subscription.user_email
