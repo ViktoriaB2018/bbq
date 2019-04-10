@@ -2,10 +2,10 @@
 ----
 
 <%= image_tag(@photo.photo.url) %>
-
 <%= t '.author' %>: <%= @photo.user.name %>
 
 --------------------------------
-<%= t '.event' %>: <%= @event.title %>
+
+<%= t '.event' %>: <%= link_to @event.title, event_url(@event) %>
 <%= t '.datetime' %>: <%= l @photo.datetime %>
 <%= t '.owner' %>: <%= @photo.user.name %>
