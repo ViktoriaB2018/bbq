@@ -18,10 +18,14 @@ gem 'rmagick', '~> 3.0.0'
 gem 'fog-aws'
 gem 'figaro'
 gem 'lightbox-bootstrap-rails', '~> 5.1', '>= 5.1.0.1'
+gem 'pundit', '~> 2.0', '>= 2.0.1'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.4'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
