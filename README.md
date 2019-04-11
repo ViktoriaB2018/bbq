@@ -5,7 +5,8 @@
 
 * Ruby version 2.5.3
 * Rails version 5.2.2
-* Deploy - Heroku
+* Deploy Heroku - https://let-bbq.herokuapp.com/
+* VPS Digital Ocean - http://b-b-q.icu
 
 #### Before running
 
@@ -41,8 +42,3 @@ You need set up variable environments to config/application.yml with gem [figaro
 GMAIL_USERNAME
 GMAIL_PASSWORD
 ```
-#### For development environment
-
-VPS Digital Ocean
-
-http://b-b-q.icu
