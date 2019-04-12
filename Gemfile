@@ -19,6 +19,7 @@ gem 'fog-aws'
 gem 'figaro'
 gem 'lightbox-bootstrap-rails', '~> 5.1', '>= 5.1.0.1'
 gem 'pundit', '~> 2.0', '>= 2.0.1'
+gem 'resque', '~> 2.0'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
