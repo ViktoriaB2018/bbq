@@ -38,6 +38,7 @@ group :development do
   gem 'capistrano-passenger', require: false
   gem 'capistrano-rbenv', require: false
   gem 'capistrano-bundler', require: false
+  gem 'capistrano-resque', '~> 0.2.3', require: false
 end
 
 group :production do
