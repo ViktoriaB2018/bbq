@@ -45,7 +45,7 @@ class CommentsController < ApplicationController
     all_emails = (event.subscriptions.map(&:user_email) + [event.user.email] - [comment.user.try(:email)]).uniq
 
     all_emails.each do |mail|
-      CommentMailerJob.perform_later(event, comment, mail)
+      EventMailer.comment(event, comment, mail).deliver_later
     end
   end
 end
