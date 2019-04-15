@@ -20,12 +20,17 @@ gem 'figaro'
 gem 'lightbox-bootstrap-rails', '~> 5.1', '>= 5.1.0.1'
 gem 'pundit', '~> 2.0', '>= 2.0.1'
 gem 'resque', '~> 2.0'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
   gem 'rspec-rails', '~> 3.4'
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
   gem 'shoulda-matchers'
 end
 
