@@ -22,6 +22,7 @@ gem 'pundit', '~> 2.0', '>= 2.0.1'
 gem 'resque', '~> 2.0'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
