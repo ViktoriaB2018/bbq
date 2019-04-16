@@ -44,6 +44,7 @@ group :development do
   gem 'capistrano-rbenv', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-resque', '~> 0.2.3', require: false
+  gem 'thin'
 end
 
 group :production do
