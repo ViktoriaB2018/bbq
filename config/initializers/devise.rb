@@ -263,11 +263,7 @@ Devise.setup do |config|
   config.omniauth :facebook, Rails.application.secrets.omniauth_facebook_id,
                   Rails.application.secrets.omniauth_facebook_secret
   config.omniauth :vkontakte, Rails.application.secrets.omniauth_vk_id,
-                  Rails.application.secrets.omniauth_vk_secret,
-                  {
-                      :client_id => Rails.application.secrets.client_id_vk,
-                      :v => '5.95'
-                  }
+                  Rails.application.secrets.omniauth_vk_secret
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
