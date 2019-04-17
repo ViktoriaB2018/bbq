@@ -263,7 +263,7 @@ Devise.setup do |config|
   config.omniauth :facebook, Rails.application.secrets.omniauth_facebook_id,
                   Rails.application.secrets.omniauth_facebook_secret
   config.omniauth :vkontakte, Rails.application.secrets.omniauth_vk_id,
-                  Rails.application.secrets.omniauth_vk_secret, scope: 'offline', provider_ignores_state: true
+                  Rails.application.secrets.omniauth_vk_secret, scope: 'offline, email', provider_ignores_state: true
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
