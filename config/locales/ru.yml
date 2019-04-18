@@ -50,7 +50,7 @@ ru:
       destroyed: 'Вы удалили фотографию'
   app:
     name: 'Шашлыки'
-    company: 'Хороший программист'
+    owner: 'Виктория Базилевская'
     politika: 'Политика конфиденциальности'
     politika_path: 'https://b-b-q.icu/politika'
   error:
