@@ -51,6 +51,8 @@ ru:
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+    politika: 'Политика конфиденциальности'
+    politika_path: 'https://b-b-q.icu/politika'
   error:
     one: '%{count} ошибка'
     few: '%{count} ошибки'

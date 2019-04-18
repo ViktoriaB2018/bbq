@@ -42,7 +42,7 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe '.find_for_vkontakte_oauth' do
+  describe '.find_for_vkontakte_oauth when access_token has an email' do
     let(:access_token) do
       double(
           :access_token,
