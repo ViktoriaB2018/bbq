@@ -28,10 +28,14 @@ class User < ApplicationRecord
 
     provider = access_token.provider
     id = access_token.extra.raw_info.id
+    name = access_token.info.name
+    avatar = access_token.info.image
     url = "https://facebook.com/#{id}"
 
     where(url: url, provider: provider).first_or_create! do |user|
       user.email = email
+      user.name = name
+      user.remote_avatar_url = avatar
       user.password = Devise.friendly_token.first(16)
     end
   end
@@ -44,10 +48,14 @@ class User < ApplicationRecord
 
     provider = access_token.provider
     id = access_token.extra.raw_info.id
+    name = access_token.info.name
+    avatar = access_token.extra.raw_info.photo_big
     url = "https://vk.com/#{id}"
 
     where(url: url, provider: provider).first_or_create! do |user|
       user.email = email
+      user.name = name
+      user.remote_avatar_url = avatar
       user.password = Devise.friendly_token.first(16)
     end
   end

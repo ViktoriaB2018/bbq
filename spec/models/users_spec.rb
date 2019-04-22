@@ -6,7 +6,11 @@ RSpec.describe User, type: :model do
       double(
           :access_token,
           provider: 'facebook',
-          info: double(email: 'vika@mail.com'),
+          info: double(
+              email: 'vika@mail.com',
+              name: 'Вика',
+              image: 'https://graph.facebook.com/10213477015136708/picture?type=large'
+          ),
           extra: double(raw_info: double(id: '10213477015136708'))
       )
     end
@@ -17,6 +21,8 @@ RSpec.describe User, type: :model do
 
         expect(user).to be_persisted
         expect(user.email).to eq 'vika@mail.com'
+        expect(user.name).to eq 'Вика'
+        expect(user.avatar.remote_avatar_url).to eq 'avatar.jpg'
       end
     end
 
@@ -47,8 +53,12 @@ RSpec.describe User, type: :model do
       double(
           :access_token,
           provider: 'vkontakte',
-          info: double(email: 'katya@mail.com'),
-          extra: double(raw_info: double(id: '100'))
+          info: double(
+              email: 'katya@mail.com',
+              name: 'Катя'
+          ),
+          extra: double(raw_info: double(id: '100' ,
+                                         photo_big: 'https://cs7001.vk.me/c7003/v7003736/3a08/mEqSflTauxA.jpg'))
       )
     end
 
@@ -58,6 +68,8 @@ RSpec.describe User, type: :model do
 
         expect(user).to be_persisted
         expect(user.email).to eq 'katya@mail.com'
+        expect(user.name).to eq 'Катя'
+        expect(user.avatar).to eq 'avatar.jpg'
       end
     end
 
