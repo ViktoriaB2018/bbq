@@ -264,7 +264,7 @@ Devise.setup do |config|
                   Rails.application.secrets.omniauth_facebook_secret, scope: 'email', image_size: 'large'
   config.omniauth :vkontakte, Rails.application.secrets.omniauth_vk_id,
                   Rails.application.secrets.omniauth_vk_secret, scope: 'offline, email',
-                  provider_ignores_state: true, image_size: :original
+                  provider_ignores_state: true, image_size: 'original'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

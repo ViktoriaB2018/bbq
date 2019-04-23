@@ -55,10 +55,10 @@ RSpec.describe User, type: :model do
           provider: 'vkontakte',
           info: double(
               email: 'katya@mail.com',
-              name: 'Катя'
+              name: 'Катя',
+              image: 'https://cs7001.vk.me/c7003/v7003736/3a08/mEqSflTauxA.jpg'
           ),
-          extra: double(raw_info: double(id: '100' ,
-                                         photo_big: 'https://cs7001.vk.me/c7003/v7003736/3a08/mEqSflTauxA.jpg'))
+          extra: double(raw_info: double(id: '100'))
       )
     end
 

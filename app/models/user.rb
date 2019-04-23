@@ -49,7 +49,7 @@ class User < ApplicationRecord
     provider = access_token.provider
     id = access_token.extra.raw_info.id
     name = access_token.info.name
-    avatar = access_token.extra.raw_info.photo_big
+    avatar = access_token.info.image
     url = "https://vk.com/#{id}"
 
     where(url: url, provider: provider).first_or_create! do |user|
